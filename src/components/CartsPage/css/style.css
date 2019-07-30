@@ -1,0 +1,21 @@
+.carts
+{
+    margin-top: 10rem;
+}
+
+.span-text
+{
+    position: absolute;
+    right: 1rem;
+}
+
+.record_action:hover
+{
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+}
+
+.record_action:active
+{
+    background-color: red;
+}

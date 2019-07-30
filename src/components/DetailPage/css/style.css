@@ -1,0 +1,66 @@
+.Detail
+{
+    margin-top: 4rem;
+}
+.Rating
+{
+    margin-top: 4rem;
+    padding-bottom: 3.5rem;
+    padding-top: 0.5rem;
+    background-color: chartreuse;
+    border-radius: 50%;
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+}
+
+.Comment_filed
+{
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+.content
+{
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.Order_table
+{
+    bottom: 0;
+}
+
+.comments_field
+{
+    width: 100%;
+    margin-top: 2rem;
+    height: 5rem;
+    margin-bottom: 1rem !important;
+}
+
+.ShowedComment
+{
+    margin-bottom: 0.5rem;
+    box-shadow: 2px 2px 1px Lavender   ;
+
+}
+
+.UserInfo
+{
+
+}
+
+.UserInfoImage
+{
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.UserInfoName
+{
+    font-weight: bold;
+}

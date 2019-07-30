@@ -1,0 +1,18 @@
+.Search_button
+{
+    width: 100% !important;
+    display: block;
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+    background-color:white;
+    padding: 0.2rem;
+    border: none;
+    border-bottom: 0.1rem solid wheat;
+    color: black;
+    overflow: hidden;
+}
+.Loadding
+{
+    margin:5% auto;
+    z-index: 50;
+}

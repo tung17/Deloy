@@ -1,0 +1,52 @@
+.OrderPage
+{
+    margin-top: 4rem ;
+}
+
+.Table
+{
+	border: 1px solid red;
+	width:10rem;
+	height: 10rem;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+.Table button
+{
+	display: none;
+}
+.Table:hover
+{
+	cursor: pointer;
+}
+
+.Table:hover .InfoTable
+{
+	opacity: 0.2;
+    background: green;
+    height: 9.8rem;
+    width: 100%;
+}
+
+.Table:hover button
+{
+	display: block;
+	position: absolute;
+	top: 40%;
+	left:35%;
+	border: none;
+	outline: none;
+	height: 30px;
+	background: #fb2525;
+	color: #fff;
+	border-radius: 20px;
+	width:5rem;
+	opacity: 1.5;
+}
+
+.Table>button:hover
+{
+	cursor: pointer;
+}
