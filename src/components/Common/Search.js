@@ -15,6 +15,10 @@ class Search extends React.Component
             SearchResult:[]
         }
     }
+    HandleClick(url)
+    {
+        window.location.replace(url);
+    }
     HandleSearch()
     {
         if(this.search.value == "")
@@ -37,7 +41,7 @@ class Search extends React.Component
         console.log(this.state.SearchResult);
         const Result = this.state.SearchResult.map(item=>{
             return(
-                <button color="mdb-color" className="Search_button"><Link to={`/Detail/${item.Name}`}>{item.Name}</Link></button>
+                <button color="mdb-color" className="Search_button" onClick={()=>{this.HandleClick(`/Detail/${item.Name}`)}}><Link to={`/Detail/${item.Name}`}>{item.Name}</Link></button>
             )
         });
         return(
