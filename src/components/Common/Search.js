@@ -65,7 +65,7 @@ const mapStateToProps = (state) =>({
 
 const mapDispatchToProps = (dispatch)=>({
     GetFoodAll:dispatch(ApiBase.GetApiObject.GetFoodAll()),
-    GetFoodDetail:(name)=>dispatch(ApiBase.GetApiObject.GetFoodDetail(name))
+    GetFoodDetail:(name)=>{dispatch(ApiBase.GetApiObject.GetFoodDetail(name));}
 });
 
 export default connect(
