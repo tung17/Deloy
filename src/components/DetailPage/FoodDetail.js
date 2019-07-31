@@ -24,8 +24,7 @@ class FoodDetail extends React.Component
 
     render()
     {
-        if(this.props.Data.foods == undefined || this.props.Data.foods == 'undefined'
-        || this.props.Data.foods == '')
+        if(this.props.Data.foods)
         {
             return(
                 <Loadding/>
