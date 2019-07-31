@@ -41,7 +41,7 @@ class Search extends React.Component
         console.log(this.state.SearchResult);
         const Result = this.state.SearchResult.map(item=>{
             return(
-                <button color="mdb-color" className="Search_button" onClick={()=>{this.HandleClick(item.Name)}}><Link to={`/Detail/${item.Name}`}>{item.Name}</Link></button>
+                <Link to={`/Detail/${item.Name}`}><button color="mdb-color" className="Search_button" onClick={()=>{this.HandleClick(item.Name)}}>{item.Name}</button></Link>
             )
         });
         return(
