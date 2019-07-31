@@ -15,9 +15,9 @@ class Search extends React.Component
             SearchResult:[]
         }
     }
-    HandleClick(name)
+    HandleClick(url)
     {
-        this.props.GetFoodDetail(name);
+        window.location.replace(url);
     }
     HandleSearch()
     {
@@ -41,7 +41,7 @@ class Search extends React.Component
         console.log(this.state.SearchResult);
         const Result = this.state.SearchResult.map(item=>{
             return(
-                <button color="mdb-color" className="Search_button" onClick={()=>{this.HandleClick(item.Name)}}><Link to={`/Detail/${item.Name}`}>{item.Name}</Link></button>
+                <button color="mdb-color" className="Search_button" onClick={()=>{this.HandleClick(`/Detail/${item.Name}`)}}><Link to={`/Detail/${item.Name}`}>{item.Name}</Link></button>
             )
         });
         return(
@@ -64,8 +64,7 @@ const mapStateToProps = (state) =>({
 });
 
 const mapDispatchToProps = (dispatch)=>({
-    GetFoodAll:dispatch(ApiBase.GetApiObject.GetFoodAll()),
-    GetFoodDetail:(name)=>{dispatch(ApiBase.GetApiObject.GetFoodDetail(name));}
+    GetFoodAll:dispatch(ApiBase.GetApiObject.GetFoodAll())
 });
 
 export default connect(
